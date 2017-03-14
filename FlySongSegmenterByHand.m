@@ -147,6 +147,8 @@ set(gcf,'position',[0 0 2*tmp(3) 1.5*tmp(4)]);
 set(gcf,'menubar','none','ResizeFcn',@resizeFcn,'WindowKeyPressFcn',@windowkeypressFcn);
 
 H=uipanel();
+AX = axes('Units','normal', 'Position', [0 0 1 1], 'Parent', H);
+
 uicontrol('parent',H,'style','popupmenu','value',CHANNEL,...
    'string',1:NCHAN, ...
    'callback', @changechannel_callback);
