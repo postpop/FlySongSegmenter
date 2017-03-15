@@ -125,7 +125,7 @@ else
     RAW=fread(fid,inf,'float32');
     fclose(fid);
   else
-    TYPE=[];
+    TYPE='';
     PULSE=[];
     SINE=[];
     DATA=varargin{1};
